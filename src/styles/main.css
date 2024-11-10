@@ -1,9 +1,9 @@
 /* Global Body Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Cleaner font choice */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Slightly lighter background for a modern feel */
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
@@ -11,7 +11,7 @@ body {
 
 /* Headings */
 h1, h2 {
-    color: #FF5722; /* Strong accent color for headings */
+    color: #FF5722;
     font-weight: bold;
     letter-spacing: 0.5px;
 }
@@ -35,7 +35,7 @@ form {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -52,13 +52,13 @@ input {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1em;
-    background-color: #fafafa; /* Light background for input fields */
+    background-color: #fafafa;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus {
     border-color: #FF5722;
-    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Focus effect to enhance interactivity */
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5);
 }
 
 button {
@@ -75,11 +75,11 @@ button {
 
 button:hover {
     background-color: #E64A19;
-    transform: translateY(-3px); /* Slight lift effect on hover */
+    transform: translateY(-3px);
 }
 
 button:active {
-    transform: translateY(1px); /* Subtle effect when clicking */
+    transform: translateY(1px);
 }
 
 /* Navigation Styles */
@@ -101,7 +101,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove right margin from the last item */
+    margin-right: 0;
 }
 
 nav ul li a {
@@ -116,7 +116,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #FF5722;
-    transform: scale(1.05); /* Hover effect with scaling */
+    transform: scale(1.05);
 }
 
 nav ul li a.active {
@@ -137,5 +137,34 @@ nav ul li a.active {
 
     nav ul li:last-child {
         margin-bottom: 0;
+    }
+}
+
+/* Responsive Form & Layouts */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly reduce font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        max-width: 90%; /* Expand form width for smaller screens */
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 1em; /* Adjust button and input font size */
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px; /* General padding adjustment */
     }
 }
