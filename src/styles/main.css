@@ -1,0 +1,141 @@
+/* Global Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Cleaner font choice */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Slightly lighter background for a modern feel */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #FF5722; /* Strong accent color for headings */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fafafa; /* Light background for input fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #FF5722;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Focus effect to enhance interactivity */
+}
+
+button {
+    padding: 12px;
+    background-color: #FF5722;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #E64A19;
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Subtle effect when clicking */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last item */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #FF5722;
+    transform: scale(1.05); /* Hover effect with scaling */
+}
+
+nav ul li a.active {
+    color: #FF5722;
+    font-weight: bold;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
